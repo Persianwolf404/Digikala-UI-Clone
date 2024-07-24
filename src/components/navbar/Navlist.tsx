@@ -26,7 +26,7 @@ function Navlist() {
       if (isScrollingUp !== lastDirection.current) {
         const element = document.getElementById("navbar_items") as HTMLElement;
 
-        if (isScrollingUp) {
+        if (!isScrollingUp) {
           gsap.to(element, {
             height: "auto",
             duration: 0.2

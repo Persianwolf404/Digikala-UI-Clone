@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <header
       id="navbar_items"
-      className="border-b-2 relative overflow-hidden border-gray-200 "
+      className="border-b-2 h-[175px] relative overflow-hidden border-gray-200 "
     >
       <Link href={"/"}>
         <Image
