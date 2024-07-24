@@ -1,8 +1,16 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import Navbar from "@/components/navbar/Navbar";
+import localFont from "next/font/local";
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
+const yekan = localFont({
+  src: [
+    {
+      path: "../../public/fonts/Yekan.ttf",
+      weight: "400",
+      style: "normal",
+    },
+  ],
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,8 +23,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html dir="rtl" lang="en">
+      <body className={yekan.className}>
+        <div className="fixed w-full">
+          <Navbar />
+        </div>
+        {children}
+        <div className="h-screen"></div>
+        <div className="h-screen"></div>
+      </body>
     </html>
   );
 }
