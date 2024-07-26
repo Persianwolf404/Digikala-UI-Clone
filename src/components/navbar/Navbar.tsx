@@ -2,15 +2,14 @@ import { IoSearch } from "react-icons/io5";
 import Navlist from "./Navlist";
 import Link from "next/link";
 import { PiShoppingCartSimple } from "react-icons/pi";
-import { MainContainer } from "@/libs/utils";
+import { MainContainer } from "@/lib/utils";
 import Image from "next/image";
-
 
 const Navbar = () => {
   return (
     <header
       id="navbar_items"
-      className="border-b-2 h-[175px] relative overflow-hidden border-gray-200 "
+      className="border-b-2 h-[175px] relative  overflow-hidden border-gray-200 "
     >
       <Link href={"/"}>
         <Image

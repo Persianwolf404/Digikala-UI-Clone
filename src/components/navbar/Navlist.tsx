@@ -7,22 +7,17 @@ import { FaRegStar } from "react-icons/fa";
 import { HiOutlineHome } from "react-icons/hi";
 import { BsFeather } from "react-icons/bs";
 import { FaLocationDot } from "react-icons/fa6";
-import { MainContainer } from "@/libs/utils";
+import { MainContainer } from "@/lib/utils";
 import gsap from "gsap";
-
 import React, { useEffect, useRef } from "react";
-
 function Navlist() {
   const lastScrollTop = useRef<number>(0);
   const lastDirection = useRef<boolean | null>(null);
-
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollTop =
         window.pageYOffset || document.documentElement.scrollTop;
       const isScrollingUp = currentScrollTop < lastScrollTop.current;
-
-      // Log to console only if the direction has changed
       if (isScrollingUp !== lastDirection.current) {
         const element = document.getElementById("navbar_items") as HTMLElement;
 
@@ -39,20 +34,13 @@ function Navlist() {
         }
         lastDirection.current = isScrollingUp;
       }
-
-      // Update the last scroll position
       lastScrollTop.current = currentScrollTop;
     };
-
     window.addEventListener("scroll", handleScroll);
-
-    // Clean up event listener on component unmount
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
-  // navbar_items;
   return (
     <MainContainer
       className="p-3

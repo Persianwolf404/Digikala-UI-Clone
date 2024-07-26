@@ -1,11 +1,14 @@
 import { ReactNode } from "react";
+import { type ClassValue, clsx } from "clsx";
+import { twMerge } from "tailwind-merge";
 
-export function utils() {
-  return <div>utils</div>;
-}
 interface MainContainerProps {
   children: ReactNode;
   className: string;
+}
+
+export function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs));
 }
 
 export function MainContainer({ children, className }: MainContainerProps) {
