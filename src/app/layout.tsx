@@ -27,7 +27,7 @@ export default function RootLayout({
     <html dir="rtl" lang="en">
       <body className={yekan.className}>
         <NextUIProvider>
-          <div className="fixed w-full">
+          <div className="fixed z-10 w-full">
             <Navbar />
           </div>
           {children}
