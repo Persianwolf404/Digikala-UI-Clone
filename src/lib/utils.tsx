@@ -21,7 +21,7 @@ export function MainContainer({ children, className }: ContainerProps) {
 
 export function ContentContainer({ children, className }: ContainerProps) {
   return (
-    <div className={`w-full mx-auto max-w-[1676px] ${className}`}>
+    <div className={`w-full mx-auto max-w-[1350px] ${className}`}>
       {children}
     </div>
   );

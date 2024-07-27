@@ -29,12 +29,10 @@ export default function RootLayout({
         <NextUIProvider className="fixed z-10 w-full">
           <Navbar />
         </NextUIProvider>
-        <div  className="w-full h-[175px]"/>
+        <div className="w-full h-[175px]"/>
         {children}
-        <div className="h-screen">
-          
-        </div>
       </body>
     </html>
   );
 }
+

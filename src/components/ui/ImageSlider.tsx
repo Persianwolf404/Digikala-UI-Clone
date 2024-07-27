@@ -14,7 +14,7 @@ type CarouselProps = {
 
 const ImageSlider: React.FC<CarouselProps> = ({ images }) => {
   return (
-    <section className="my-4 flex w-full relative">
+    <section className="flex user-select-none w-full relative">
       <div className=" w-full">
         <Swiper
           modules={[Autoplay, Pagination]}
