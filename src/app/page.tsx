@@ -1,56 +1,80 @@
-"use client";
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/autoplay";
-import { Autoplay, Pagination } from "swiper/modules";
-
-const Home: React.FC = () => {
+"use client"
+import ImageSlider from "@/components/ui/ImageSlider";
+import { Card, CardContent } from "@/components/ui/card";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+export default function Home() {
+  const url = [
+    "https://dkstatics-public.digikala.com/digikala-adservice-banners/7ecf7655c1b4022ddc4abaabbacc05e44b6f7310_1721577305.jpg?x-oss-process=image/quality,q_95",
+    "https://dkstatics-public.digikala.com/digikala-adservice-banners/71f867b90d6dca65405a4252159f7b9c5b7cd8b6_1721819972.jpg?x-oss-process=image/quality,q_95",
+  ];
   return (
-    <section className="py-12 pt-[250px]">
-      <div className="container mx-auto">
-        <Swiper
-          modules={[Autoplay, Pagination]} // Use Autoplay and Pagination modules
-          pagination={{ clickable: true, type: "bullets" }} // Use bullets for pagination
-          loop={true}
-          autoplay={{
-            delay: 2500, // Delay in ms between slides
-            disableOnInteraction: false, // Autoplay continues even when user interacts
-            pauseOnMouseEnter: true, // Pause autoplay on mouse enter
-          }}
-          className="mySwiper rounded-lg"
-        >
-          <SwiperSlide>
-            <div className="flex justify-center items-center h-[600px] bg-gray-200">
-              <p>Slide 1</p>
+    <div className="px-20">
+      <Carousel className="w-full max-w-sm">
+        <CarouselContent className="-ml-1">
+          <CarouselItem className="pl-1 md:basis-1/2 lg:basis-1/3">
+            <div className="p-1">
+              <Card>
+                <CardContent className="flex aspect-square items-center justify-center p-6">
+                  <span className="text-2xl font-semibold">{ 1}</span>
+                </CardContent>
+              </Card>
             </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="flex justify-center items-center h-[600px] bg-gray-400">
-              <p>Slide 2</p>
+          </CarouselItem>{" "}
+          <CarouselItem  className="pl-1 md:basis-1/2 lg:basis-1/3">
+            <div className="p-1">
+              <Card>
+                <CardContent className="flex aspect-square items-center justify-center p-6">
+                  <span className="text-2xl font-semibold">{ 1}</span>
+                </CardContent>
+              </Card>
             </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="flex justify-center items-center h-[600px] bg-gray-200">
-              <p>Slide 3</p>
+          </CarouselItem>{" "}
+          <CarouselItem  className="pl-1 md:basis-1/2 lg:basis-1/3">
+            <div className="p-1">
+              <Card>
+                <CardContent className="flex aspect-square items-center justify-center p-6">
+                  <span className="text-2xl font-semibold">{ 1}</span>
+                </CardContent>
+              </Card>
             </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="flex justify-center items-center h-[600px] bg-gray-400">
-              <p>Slide 4</p>
+          </CarouselItem>{" "}
+          <CarouselItem className="pl-1 md:basis-1/2 lg:basis-1/3">
+            <div className="p-1">
+              <Card>
+                <CardContent className="flex aspect-square items-center justify-center p-6">
+                  <span className="text-2xl font-semibold">{ + 1}</span>
+                </CardContent>
+              </Card>
             </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="flex justify-center items-center h-[600px] bg-gray-200">
-              <p>Slide 5</p>
+          </CarouselItem>{" "}
+          <CarouselItem className="pl-1 md:basis-1/2 lg:basis-1/3">
+            <div className="p-1">
+              <Card>
+                <CardContent className="flex aspect-square items-center justify-center p-6">
+                  <span className="text-2xl font-semibold">{ + 1}</span>
+                </CardContent>
+              </Card>
             </div>
-          </SwiperSlide>
-          {/* Add more slides as needed */}
-        </Swiper>
-      </div>
-    </section>
+          </CarouselItem>{" "}
+          <CarouselItem  className="pl-1 md:basis-1/2 lg:basis-1/3">
+            <div className="p-1">
+              <Card>
+                <CardContent className="flex aspect-square items-center justify-center p-6">
+                  <span className="text-2xl font-semibold">{ + 1}</span>
+                </CardContent>
+              </Card>
+            </div>
+          </CarouselItem>
+        </CarouselContent>
+        <CarouselPrevious />
+        <CarouselNext />
+      </Carousel>
+    </div>
   );
-};
-
-export default Home;
+}

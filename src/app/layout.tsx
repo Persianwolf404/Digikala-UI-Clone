@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Navbar from "@/components/navbar/Navbar";
+import Navbar from "@/components/main_components/navbar/Navbar";
 import { NextUIProvider } from "@nextui-org/react";
 import localFont from "next/font/local";
 import "./globals.css";
@@ -26,14 +26,14 @@ export default function RootLayout({
   return (
     <html dir="rtl" lang="en">
       <body className={yekan.className}>
-        <NextUIProvider>
-          <div className="fixed z-10 w-full">
-            <Navbar />
-          </div>
-          {children}
-          <div className="h-screen"></div>
-          <div className="h-screen"></div>
+        <NextUIProvider className="fixed z-10 w-full">
+          <Navbar />
         </NextUIProvider>
+        <div  className="w-full h-[175px]"/>
+        {children}
+        <div className="h-screen">
+          
+        </div>
       </body>
     </html>
   );

@@ -69,3 +69,10 @@ body {
   background-color: #fff;
 }
 
+
+.swiper-pagination-bullet-active {
+  background-color: white !important; /* Active bullet color */
+  width: 17px !important;
+  border-radius: 5px !important;
+  transition: all .2s linear;
+}
