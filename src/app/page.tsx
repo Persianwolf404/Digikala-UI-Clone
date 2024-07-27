@@ -1,5 +1,5 @@
 "use client";
-import ImageSlider from "@/components/ui/ImageSlider";
+// import ImageSlider from "@/components/ui/ImageSlider";
 import Stories from "@/components/main_components/stories/Stories";
 
 export default function Home() {
@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <main className="">
       <Stories />
-      <ImageSlider images={url} />
+      {/* <ImageSlider images={url} /> */}
     </main>
   );
 }
