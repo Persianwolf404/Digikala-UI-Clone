@@ -34,7 +34,7 @@ const ImageSlider: React.FC<CarouselProps> = ({ images }) => {
                   <Image
                     className="object-cover object-center"
                     src={url}
-                    layout="fill"
+                    fill
                     alt="banner"
                   />
                 </div>

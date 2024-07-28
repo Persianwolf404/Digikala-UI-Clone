@@ -18,7 +18,7 @@ const Navbar = () => {
             src={
               "https://dkstatics-public.digikala.com/digikala-adservice-banners/03b08688d54afa1911722b86a42ea1ab367dc8be_1721658632.jpg?x-oss-process=image/quality,q_95"
             }
-            layout="fill"
+            fill
             alt="banner"
           />
         </div>

@@ -1,7 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["dkstatics-public.digikala.com", "fastly.picsum.photos"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "dkstatics-public.digikala.com",
+        pathname: "/**",
+      },
+    ],
   },
 };
 

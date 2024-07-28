@@ -25,14 +25,16 @@ export default function RootLayout({
 }>) {
   return (
     <html dir="rtl" lang="en">
+      <head>
+        <link rel="shortcut icon" href="/logo.svg" />
+      </head>
       <body className={yekan.className}>
         <NextUIProvider className="fixed z-10 w-full">
           <Navbar />
         </NextUIProvider>
-        <div className="w-full h-[175px]"/>
+        <div className="w-full h-[175px]" />
         {children}
       </body>
     </html>
   );
 }
-
