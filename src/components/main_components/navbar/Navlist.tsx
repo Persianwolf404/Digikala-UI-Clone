@@ -24,13 +24,13 @@ function Navlist() {
         if (!isScrollingUp) {
           gsap.to(element, {
             height: "auto",
-            duration: 0.2
+            duration: 0.2,
           });
         } else {
-           gsap.to(element, {
-             height: "175px",
-             duration: 0.2,
-           });
+          gsap.to(element, {
+            height: "175px",
+            duration: 0.2,
+          });
         }
         lastDirection.current = isScrollingUp;
       }

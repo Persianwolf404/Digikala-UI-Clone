@@ -28,7 +28,7 @@ const Navbar = () => {
           <div className="mt-1">
             <Image src="/logo.svg" width={120} height={120} alt="logo" />
           </div>
-          <div className="flex-grow mr-5">
+          <div className="flex-grow  mr-5">
             <form className="w-[600px] rounded-lg items-center px-3 bg-gray-100 h-[45px] flex ">
               <IoSearch className="text-2xl ml-3 text-gray-400" />
               <input

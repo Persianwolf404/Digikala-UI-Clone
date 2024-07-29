@@ -80,7 +80,7 @@ body {
   background-color: white !important; /* Active bullet color */
   width: 17px !important;
   border-radius: 5px !important;
-  transition: all .2s linear;
+  transition: all 0.2s linear;
 }
 .user-select-none {
   -webkit-touch-callout: none;
