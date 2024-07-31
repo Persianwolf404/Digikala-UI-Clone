@@ -12,7 +12,7 @@ type CarouselProps = {
   images: string[];
 };
 
-const ImageSlider: React.FC<CarouselProps> = ({ images }) => {
+const ImageCarousel: React.FC<CarouselProps> = ({ images }) => {
   return (
     <section className="flex user-select-none w-full relative">
       <div className=" w-full">
@@ -47,4 +47,4 @@ const ImageSlider: React.FC<CarouselProps> = ({ images }) => {
   );
 };
 
-export default ImageSlider;
+export default ImageCarousel;

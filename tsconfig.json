@@ -33,7 +33,7 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "build/types/**/*.ts"
-  ],
+, "src/components/main_components/special_offers/items_carousel"  ],
   "exclude": [
     "node_modules"
   ]

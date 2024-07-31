@@ -34,6 +34,7 @@ export default function RootLayout({
         </NextUIProvider>
         <div className="w-full h-[175px]" />
         {children}
+        <div className="h-screen"></div>
       </body>
     </html>
   );
