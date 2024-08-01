@@ -30,6 +30,7 @@
     "video.js": "^8.16.1"
   },
   "devDependencies": {
+    "@types/node": "^22.0.2",
     "@types/react": "^18",
     "tailwindcss": "^3.4.1",
     "typescript": "5.5.4"
