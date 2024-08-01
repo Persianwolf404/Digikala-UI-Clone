@@ -10,8 +10,7 @@ export default function ProductShortcut() {
           }
           fill
           alt="banner"
-              />
-              
+        />
       </div>
     </div>
   );
