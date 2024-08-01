@@ -30,3 +30,4 @@ export function ContentContainer({ children, className }: ContainerProps) {
 export async function wait(ms: number) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
+
