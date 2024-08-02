@@ -3,21 +3,20 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
-import { FreeMode, Pagination } from "swiper/modules";
-import { ContentContainer } from "@/lib/utils";
+import { FreeMode } from "swiper/modules";
 import { GrLinkNext } from "react-icons/gr";
 import ProductShortcut from "@/components/ui/ProductShortcut";
 
 export default function ItemsCarousel() {
   return (
-    <ContentContainer
+    <div
       className={"bg-[#d63253] mx-auto rounded-2xl mt-10 h-[300px] flex p-5"}
     >
       <Swiper
         slidesPerView="auto"
         spaceBetween={5}
         freeMode={true}
-        modules={[FreeMode, Pagination]}
+        modules={[FreeMode]}
         className="mySwiper"
       >
         <SwiperSlide style={{ width: "160px", height: "auto" }}>
@@ -31,13 +30,13 @@ export default function ItemsCarousel() {
         </SwiperSlide>
         {Array.from({ length: 10 }).map((_, index) => (
           <SwiperSlide key={index} style={{ width: "160px", height: "auto" }}>
-            <div className="flex items-center justify-center w-full h-full bg-white">
-              <ProductShortcut/>
+            <div className={`${index == 0? "rounded-r-lg" : null} flex items-center justify-center w-full h-full bg-white`}>
+              <ProductShortcut />
             </div>
           </SwiperSlide>
         ))}
         <SwiperSlide style={{ width: "160px", height: "auto" }}>
-          <div className="flex text-gray-600 flex-col items-center justify-center w-full h-full bg-white">
+          <div className="flex text-gray-600 flex-col rounded-l-lg items-center justify-center w-full h-full bg-white">
             <div className="p-5 border-2 mb-5 border-blue-400 rounded-full rotate-180">
               <GrLinkNext className="text-blue-400" />
             </div>
@@ -45,6 +44,6 @@ export default function ItemsCarousel() {
           </div>
         </SwiperSlide>
       </Swiper>
-    </ContentContainer>
+    </div>
   );
 }

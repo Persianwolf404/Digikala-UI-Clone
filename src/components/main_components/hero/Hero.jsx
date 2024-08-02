@@ -1,6 +1,6 @@
 import Stories from "./stories/Stories";
-import ImageCarousel from "./image_slider/ImageCarousel";
-import HeroGroups from "./hero_groups/HeroGroups";
+import ImageCarousel from "./ImageCarousel";
+import HeroGroups from "./HeroGroups";
 export default function Hero() {
 
   const url = [

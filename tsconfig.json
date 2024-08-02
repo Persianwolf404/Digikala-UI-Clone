@@ -33,7 +33,7 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "build/types/**/*.ts"
-, "src/components/main_components/special_offers/items_carousel"  ],
+, "src/components/main_components/special_offers/items_carousel", "src/components/main_components/main_page_products/dsad"  ],
   "exclude": [
     "node_modules"
   ]
