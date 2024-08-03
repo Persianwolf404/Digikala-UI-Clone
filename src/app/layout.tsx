@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Navbar from "@/components/main_components/navbar/Navbar";
 import { NextUIProvider } from "@nextui-org/react";
+import Footer from "@/components/main_components/footer/Footer";
 import localFont from "next/font/local";
 import "./globals.css";
 const yekan = localFont({
@@ -34,7 +35,7 @@ export default function RootLayout({
         </NextUIProvider>
         <div className="w-full h-[175px]" />
         {children}
-        <div className="h-screen"></div>
+        <Footer/>
       </body>
     </html>
   );

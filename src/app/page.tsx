@@ -4,6 +4,7 @@ import ProductGroups from "@/components/main_components/product_groups/ProductGr
 import Brands from "@/components/main_components/brands/Brands";
 import MainPageProducts from "@/components/main_components/main_page_products/MainPageProducts";
 
+
 export default function Home() {
   return (
     <main>

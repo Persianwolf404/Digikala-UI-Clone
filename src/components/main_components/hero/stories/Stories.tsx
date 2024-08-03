@@ -10,12 +10,14 @@ import StoriesContent from "./StoriesContent";
 import StoryModal from "./StoryModal";
 
 export default function Stories() {
-  const data: { url: string; title: string }[] = [
-    {
-      url: "https://dkstatics-public.digikala.com/digikala-content-x-post-media/879b2f7e6543e601d50ae4952b4ad9c1bdff7697_1720459239.jpg?x-oss-process=image/resize,m_fill,h_115,w_115",
-      title: "لورم ایپسوم یک متن ساختگی است",
-    },
-  ];
+  let obj = {
+    url: "https://dkstatics-public.digikala.com/digikala-content-x-post-media/879b2f7e6543e601d50ae4952b4ad9c1bdff7697_1720459239.jpg?x-oss-process=image/resize,m_fill,h_115,w_115",
+    title: "لورم ایپسوم یک متن ساختگی است",
+  };
+  const data = [];
+  for (let index = 0; index < 20; index++) {
+    data.push(obj);
+  }
 
   return (
     <ContentContainer className="ltr relative my-2">

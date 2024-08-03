@@ -19,6 +19,7 @@ export default function MainPageProducts() {
       <TopProducts />
       <Suggestions />
       <DiscountHighlights />
+      <TopProducts />
     </ContentContainer>
   );
 }
