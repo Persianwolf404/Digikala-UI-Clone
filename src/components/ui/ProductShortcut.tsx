@@ -26,6 +26,7 @@ export default function ProductShortcut({
         />
       </div>
       <div className="flex flex-col">
+        
         <h3 className="text-gray-500 text-xs mt-2 line-clamp-2">
           دفتر نقاشی 40 برگ تیما مدل ستیا مجموعه 10 عددی
         </h3>
