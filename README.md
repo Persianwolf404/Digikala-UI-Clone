@@ -2,10 +2,12 @@
 
 **Digikala UI Clone** is a **pixel-perfect desktop UI replica** of Iran’s largest e-commerce platform. Built purely for visual accuracy using modern tools, this project recreates the **static layout** and **styling** of Digikala — without any backend or interactivity.
 
-> ⚠️ This is a **static desktop UI only**. Buttons and features are non-functional.  
+> ⚠️ This is a **static UI only**. Buttons and features are non-functional.  
 > ⚠️ **Mobile responsiveness is not supported** — best viewed on large screens.
 
 ---
+
+[🌐 Visit **Digikala Clone** Website ](https://onlineshop-xi.vercel.app/)
 
 ## 🔍 Preview
 
@@ -39,7 +41,7 @@
 - **Next.js 15 / App Router**
 - **TypeScript**
 - **Tailwind CSS**
-- **Static UI Design Only**
+- **Gsap**
 
 ---
 
