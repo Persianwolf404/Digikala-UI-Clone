@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🛍️ Digikala UI Clone
 
-## Getting Started
+**Digikala UI Clone** is a **pixel-perfect desktop UI replica** of Iran’s largest e-commerce platform. Built purely for visual accuracy using modern tools, this project recreates the **static layout** and **styling** of Digikala — without any backend or interactivity.
 
-First, run the development server:
+> ⚠️ This is a **static desktop UI only**. Buttons and features are non-functional.  
+> ⚠️ **Mobile responsiveness is not supported** — best viewed on large screens.
+
+---
+
+## 🔍 Preview
+
+![Digikala Clone Preview](/public/digikala-clone-preview.gif)
+
+---
+
+## 🚀 Highlights
+
+- 🎯 **Pixel-Perfect Layout**  
+  Matches the real Digikala site in every margin, icon, and style.
+
+- 🖥️ **Desktop-First Design**  
+  Optimized for large screens — like the original site.
+
+- ⚡ **Lighthouse Superiority**  
+  Beats the real Digikala website in performance metrics and best practices.
+
+---
+
+## 📊 Lighthouse Score
+
+![Lighthouse Report](/public/lighthouse-report.png)
+
+> Scores 95+ across Performance, Accessibility, SEO, and Best Practices.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Next.js 15 / App Router**
+- **TypeScript**
+- **Tailwind CSS**
+- **Static UI Design Only**
+
+---
+
+## 📂 Installation
+
+Clone the repo and run it locally:
 
 ```bash
+git clone https://github.com/your-username/digikala-clone.git
+cd digikala-clone
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
